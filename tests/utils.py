@@ -18,6 +18,8 @@ def requires_api_key(env_var):
         return wrapper
 
     return decorator
+<<<<<<< HEAD
+=======
 
 
 def skip_in_ci(test_function):
@@ -25,3 +27,4 @@ def skip_in_ci(test_function):
         os.environ.get("CI") == "true",
         reason="This test doesn't work on GitHub Actions.",
     )(test_function)
+>>>>>>> da48f9c972492f6ed7ae0c05813ee009d9438a7c
